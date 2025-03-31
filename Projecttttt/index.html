@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlappyCat Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>FlappyCat</h1>
+        </div>
+        
+        <div class="game-wrapper">
+            <div id="startMenu" class="menu-screen">
+                <h2>FlappyCat</h2>
+                <div class="button-container">
+                    <button id="playButton" class="menu-button">Play</button>
+                    <button id="rateButton">Rate</button>
+                    <button id="leaderboardButton" class="menu-button">Leaderboard</button>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas"></canvas>
+            <div id="score">0</div>
+            <div id="startMessage"></div>
+            <button id="soundButton" class="sound-button">
+                <img id="soundIcon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6Ii8+PHBhdGggZD0iTTEyIDZjLTMuMzEgMC02IDIuNjktNiA2czIuNjkgNiA2IDYgNi0yLjY5IDYtNi0yLjY5LTYtNi02em0wIDEwYy0yLjIxIDAtNC0xLjc5LTQtNHMxLjc5LTQgNC00IDQgMS43OSA0IDQtMS43OSA0LTQgNHoiLz48L3N2Zz4=" alt="Sound">
+            </button>
+        </div>
+        
+        <div class="game-footer">
+            <p>Use SPACE or CLICK to jump</p>
+            <p>Avoid the pipes and collect points!</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
